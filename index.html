@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Guide Santé</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #2E7D32;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        .conseil {
+            background-color: #E8F5E9;
+            padding: 10px;
+            border-left: 4px solid #4CAF50;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px 0;
+        }
+        button:hover {
+            background-color: #388E3C;
+        }
+        #resultat {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mon Guide Santé</h1>
+        <p>Des conseils simples pour une vie plus saine</p>
+    </header>
+
+    <section id="alimentation">
+        <h2>Alimentation saine</h2>
+        <div class="conseil">
+            <h3>Mangez équilibré</h3>
+            <p>Une alimentation équilibrée comprend des fruits, des légumes, des protéines, des céréales complètes et des produits laitiers.</p>
+        </div>
+        <div class="conseil">
+            <h3>Hydratez-vous</h3>
+            <p>Buvez au moins 1,5 litre d'eau par jour pour maintenir une bonne hydratation.</p>
+        </div>
+    </section>
+
+    <section id="activite">
+        <h2>Activité physique</h2>
+        <div class="conseil">
+            <h3>Bougez quotidiennement</h3>
+            <p>30 minutes d'activité physique modérée par jour peuvent améliorer considérablement votre santé.</p>
+        </div>
+        <div class="conseil">
+            <h3>Variez les exercices</h3>
+            <p>Combinez cardio, musculation et étirements pour un programme complet.</p>
+        </div>
+    </section>
+
+    <section id="sommeil">
+        <h2>Sommeil réparateur</h2>
+        <div class="conseil">
+            <h3>Dormez suffisamment</h3>
+            <p>Les adultes ont besoin de 7 à 9 heures de sommeil par nuit pour une santé optimale.</p>
+        </div>
+        <div class="conseil">
+            <h3>Routine du coucher</h3>
+            <p>Établissez une routine relaxante avant le coucher et évitez les écrans 1 heure avant de dormir.</p>
+        </div>
+    </section>
+
+    <section id="calculateur">
+        <h2>Calculateur d'IMC</h2>
+        <p>L'Indice de Masse Corporelle est un indicateur de corpulence.</p>
+        
+        <label for="poids">Poids (kg):</label>
+        <input type="number" id="poids" min="30" max="200">
+        
+        <label for="taille">Taille (cm):</label>
+        <input type="number" id="taille" min="100" max="250">
+        
+        <button onclick="calculerIMC()">Calculer IMC</button>
+        
+        <div id="resultat"></div>
+    </section>
+
+    <footer>
+        <p>Cette application fournit des conseils généraux. Consultez un professionnel de santé pour des recommandations personnalisées.</p>
+        <p>© 2023 Mon Guide Santé</p>
+    </footer>
+
+  
+</body>
+</html>
